@@ -1,0 +1,213 @@
+/*
+*
+*	CSS RESET
+*
+*/
+
+* {
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+/*
+*
+*	GENERAL RULE
+*
+*/
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header#mainHeader {
+	margin:0 auto;
+	background-color: red;
+	/*background-image: url("../image/header.png")*/
+	height:30vh;
+}
+header#mainHeader > img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	height:100%;
+}
+
+header#mainHeader > div {
+	position:relative;
+	bottom:150px;
+	left:50px;
+}
+header#mainHeader > div > h1 {
+	font-family: 'Asul', sans-serif;
+	font-size: 24px;
+}
+header#mainHeader > div > p {
+	font-size: 12px;
+}
+
+nav#mainNav {
+	margin:0 auto;
+}
+nav#mainNav ul {
+	list-style-type: none;
+	padding:0;
+}
+nav#mainNav ul > li {
+	display: inline-block;
+	margin:2px 0;
+}
+nav#mainNav > div#left {
+	width:50%;
+	text-align: left;
+	float:left;
+}
+nav#mainNav > div#right {
+	width:50%;
+	text-align: right;
+	display: inline-block;
+}
+
+main#wrapper {
+	margin:0 auto;
+}
+main#wrapper > div#leftColumn {
+	float:left;
+	background-color: red;
+	min-height: 100vh;
+}
+main#wrapper > div#rightColumn {
+	display: inline-block;
+	background-color:green;
+	min-height: 100vh;
+}
+
+main#wrapper > div#rightColumn div {
+	padding:5px;
+}
+
+/*LEFT COLUMN*/
+
+section.info  {
+	float:left;
+	position: relative;
+	padding:5px;
+}
+section.info > h2,
+section.info > div.label-and-comment {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+section.info img {
+	width:20%;
+	float:left;
+	margin:5px 10px;
+}
+section.info ul {
+	margin-top: 40px;
+	padding-left:10px;
+	/*margin-left: 10px;*/
+}
+section.info ul > li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+section.info button {
+	position:absolute;
+	right:10px;
+}
+
+/*RIGHT COLUMN*/
+
+main#wrapper > div#rightColumn h3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width:100%;
+	background-color: blue;
+}
+
+div#rightColumn img {
+	width:20%;
+	float:left;
+	margin-right: 5px;
+	margin-left:10px;
+}
+
+/*FOoter*/
+
+footer#mainFooter	{
+	margin:0 auto;
+	min-height: 10vh;
+	padding: 5px;
+}
+
+footer#mainFooter div {
+	float:left;
+}
+.clear:after {
+	content:"";
+	clear:both;
+	display: block;
+}
+
+/*
+ *
+ * Desktop Devices
+ *
+ */
+
+ @media only screen and (min-width: 961px) {
+
+ 	.col-lg-1 {
+ 		width: 8.33%; /* 100% / 12columns = 8.33% */
+ 	}
+
+ 	.col-lg-2 {
+ 		width: 16.66%;
+ 	}
+
+ 	.col-lg-3 {
+ 		width: 25%;
+ 	}
+
+ 	.col-lg-4 {
+ 		width: 33.33%;
+ 	}
+
+ 	.col-lg-5 {
+ 		width: 41.66%;
+ 	}
+
+ 	.col-lg-6 {
+ 		width: 50%;
+ 	}
+
+ 	.col-lg-7 {
+ 		width: 58.33%;
+ 	}
+
+ 	.col-lg-8 {
+ 		width: 66.66%;
+ 	}
+
+ 	.col-lg-9 {
+ 		width: 75%;
+ 	}
+
+ 	.col-lg-10 {
+ 		width: 83.33%;
+ 	}
+
+ 	.col-lg-11 {
+ 		width: 91.66%;
+ 	}
+
+ 	.col-lg-12 {
+ 		width: 100%;
+ 	}
+ }
+
+/*
+font-family: 'Asul', sans-serif;
+font-family: 'Montserrat', sans-serif;
