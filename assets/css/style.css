@@ -17,11 +17,15 @@
 */
 body {
 	font-family: 'Montserrat', sans-serif;
+	background-image: url("../image/bodyBackground.jpg")
+	/*background-color:white; */
 }
+
+/*Header*/
 
 header#mainHeader {
 	margin:0 auto;
-	background-color: red;
+	/*background-color: red;*/
 	/*background-image: url("../image/header.png")*/
 	height:30vh;
 }
@@ -34,19 +38,27 @@ header#mainHeader > img {
 
 header#mainHeader > div {
 	position:relative;
-	bottom:150px;
+	bottom:200px;
 	left:50px;
 }
 header#mainHeader > div > h1 {
 	font-family: 'Asul', sans-serif;
-	font-size: 24px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #170404;
 }
 header#mainHeader > div > p {
-	font-size: 12px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
+
+/*Nav*/
 nav#mainNav {
 	margin:0 auto;
+	background-color: #9d2aa959;
+	padding:10px 10px;
+	color: white;
 }
 nav#mainNav ul {
 	list-style-type: none;
@@ -60,37 +72,76 @@ nav#mainNav > div#left {
 	width:50%;
 	text-align: left;
 	float:left;
+	padding-left: 10px;
 }
+nav#mainNav > div#left li {
+	margin-right: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
 nav#mainNav > div#right {
 	width:50%;
 	text-align: right;
 	display: inline-block;
+	padding-right: 10px; 
 }
+nav#mainNav > div#right li {
+	margin-left: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*Main Wrapper*/
 
 main#wrapper {
 	margin:0 auto;
+	/*background-image: url("../image/mainWrapperBackground.png")*/
+	background-color: #e2f3deeb;
 }
 main#wrapper > div#leftColumn {
 	float:left;
-	background-color: red;
+	/*background-color: red;*/
 	min-height: 100vh;
 }
 main#wrapper > div#rightColumn {
 	display: inline-block;
-	background-color:green;
+	/*background-color:green;*/
 	min-height: 100vh;
-}
-
-main#wrapper > div#rightColumn div {
 	padding:5px;
 }
 
 /*LEFT COLUMN*/
 
+main#wrapper > div#leftColumn {
+	padding:5px;
+}
+
+main#wrapper > div#leftColumn > div#slidingImage {
+	width:100%;
+	height:300px;
+	border: 4px solid black;
+}
+
 section.info  {
 	float:left;
 	position: relative;
 	padding:5px;
+}
+
+section.info > div.label-and-comment {
+	margin-bottom: 10px;
+}
+
+section.info > div.label-and-comment > span {
+	background-color:#8e0404c4;
+	padding: 0 10px;
+	color: white;
+	text-transform: capitalize;
+}
+
+section.info > h2 {
+	font-size: 30px;
 }
 section.info > h2,
 section.info > div.label-and-comment {
@@ -102,6 +153,7 @@ section.info img {
 	width:20%;
 	float:left;
 	margin:5px 10px;
+	border-style: inset;
 }
 section.info ul {
 	margin-top: 40px;
@@ -116,41 +168,126 @@ section.info ul > li {
 section.info button {
 	position:absolute;
 	right:10px;
+	margin-top:10px;
 }
 
 /*RIGHT COLUMN*/
 
-main#wrapper > div#rightColumn h3 {
+/*G Ad*/
+
+main#wrapper > div#rightColumn > div#ad {
+	width:100%;
+	height: 200px;
+	border: 2px solid black;
+}
+
+/*Right information*/
+
+main#wrapper > div#rightColumn > div {
+	margin-bottom: 10px;
+	padding:5px;
+}
+
+main#wrapper > div#rightColumn > div > div.right-column-header {
+	/*background-color: blue;*/
+	background-image: url(../image/rightColumnHeaderBackground.jpg);
+	margin-bottom: 15px;
+}
+
+main#wrapper > div#rightColumn > div > div {
+	padding:5px;
+}
+
+main#wrapper > div#rightColumn > div > div > img.h3-image {
+	width:18%;
+	float:left;
+	margin-right: 10px;
+	/*margin-bottom: 5px;*/
+}
+main#wrapper > div#rightColumn > div > div > h3 {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width:100%;
-	background-color: blue;
 }
 
-div#rightColumn img {
-	width:20%;
+main#wrapper > div#rightColumn > div > img.inner-pic {
+	width:25%;
 	float:left;
-	margin-right: 5px;
-	margin-left:10px;
+	margin:10px;
+}
+main#wrapper > div#rightColumn > div > h4 {
+	margin-top: 10px 5px 5px 5px;
 }
 
-/*FOoter*/
+main#wrapper > div#rightColumn > div#labels > div > ul {
+	margin-left: 10px;
+}
+main#wrapper > div#rightColumn > div#labels > div > ul > li {
+	list-style-type: none;
+	padding-bottom: 10px;
+	border-bottom: 2px solid lightgrey;
+	margin-top: 10px;
+}
 
-footer#mainFooter	{
+
+/*Main Footer*/
+
+footer#mainFooter {
 	margin:0 auto;
-	min-height: 10vh;
-	padding: 5px;
+	min-height: 25vh;
+	background-image: url("../image/mainFooterBackground.jpg")
+}
+
+footer#mainFooter h3,
+footer#mainFooter p,
+footer#mainFooter li {
+	color:;
 }
 
 footer#mainFooter div {
-	float:left;
+	float:left;	
+	padding:20px;
 }
+
+footer#mainFooter > div > img {
+	width: 15%;
+	float: left;
+	margin-right: 5px;
+}
+
+
+footer#mainFooter h3 {
+	margin-bottom: 20px;
+	margin-top: 5px;	
+}
+
+footer#mainFooter > div#middleColumn > ul > li {
+	border-bottom: 3px solid lightgrey;
+	/*background-color: white;*/
+	padding-bottom: 10px;
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+/*Ending Footer*/
+
+footer#endingFooter {
+	/*min-height: 4vh;*/
+	margin: 0 auto;
+	/*background-color: olive;*/
+	padding:10px;
+}
+
+footer#endingFooter > p {
+	text-align: center;
+}
+
+
+
 .clear:after {
 	content:"";
 	clear:both;
 	display: block;
 }
-
 /*
  *
  * Desktop Devices
